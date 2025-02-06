@@ -6,7 +6,7 @@
     <title>Gene Therapy Tracker</title>
     <script>
         async function loadStockData() {
-            const sheetURL = "https://docs.google.com/spreadsheets/d/YOUR_SHEET_ID/gviz/tq?tqx=out:json";
+            const sheetURL = "https://docs.google.com/spreadsheets/d/1izU2ekIxn-uQWgbU05pXUeCOleBumLorRPOYmWNq98E/edit?gid=0#gid=0";
             const response = await fetch(sheetURL);
             const text = await response.text();
             const json = JSON.parse(text.substr(47).slice(0, -2)); 
